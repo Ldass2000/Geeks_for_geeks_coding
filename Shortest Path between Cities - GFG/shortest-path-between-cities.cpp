@@ -11,6 +11,8 @@ class Solution{
 public:
     int shortestPath( int x, int y){ 
         // Simple logic-Find lowest common ancestor i.e., find nearest root to both the
+        // The parent of any element will be floor(n/2)
+// So we just keep finding parent for the larger until they become equal.
         int lx=0;
         int ly=0;
         if(x==y) return 0;
